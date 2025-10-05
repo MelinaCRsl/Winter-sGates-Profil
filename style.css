@@ -23,11 +23,8 @@ body {
 /* 🖼️ Logo animé */
 .logo {
   width: 200px;
-  opacity: 0;
   transform: scale(0.8);
   animation: fadeZoom 2s ease-out forwards;
-  margin-bottom: 20px;
-  border-radius: 12px;
   box-shadow: 0 0 20px #8a2be2;
 }
 
