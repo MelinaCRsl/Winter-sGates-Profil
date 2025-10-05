@@ -21,15 +21,15 @@ body {
 }
 
 .welcome-title {
-  font-size: 32px;
-  color: #f0f0f0;
-  text-shadow: 0 0 8px #8a2be2;
+  font-size: 75px;
+  color: #1f4782;
+  text-shadow: 0 0 8px #9e4040;
   margin-bottom: 20px;
 }
 
 /* 🖼️ Logo animé */
 .logo {
-  width: 512px;
+  width: 600px;
   transform: scale(0.8);
   animation: fadeZoom 2s ease-out forwards;
 
@@ -46,12 +46,12 @@ button {
   display: block;
   margin: 20px auto;
   padding: 12px 24px;
-  background-color: #8a2be2;
+  background-color: #9e4040;
   color: white;
   border: none;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
