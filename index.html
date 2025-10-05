@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Fiche RP - Mélina</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="container">
-			<h1>Mélina</h1>
-			<img src="portrait.jpg" alt="Portrait de Mélina">
-			<p><strong>Pronouns:</strong> She/Her</p>
-			<p><strong>Gender:</strong> Female</p>
-			<p><strong>DOB:</strong> 05/01/2004</p>
-			<p><strong>Height:</strong> 5'7"</p>
-			<p><strong>Weight:</strong> 125</p>
-			<h2>Academic Information</h2>
-			<p><strong>School Year:</strong> Freshman</p>
-			<p><strong>Major:</strong> Astronomy</p>
-			<button>Update Character</button>
-		</div>
-	</body>
+<head>
+  <title>Winter's Gates RP</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = function() {
+      const name = localStorage.getItem("rp_name");
+      if (name) {
+        window.location.href = "profile.html"; // profil déjà rempli
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="welcome">
+    <img src="logo-universite.png" alt="Logo Université" class="logo">
+    <h1>Welcome to Winter's Gates RP</h1>
+    <button onclick="window.location.href='form.html'">Create your profile</button>
+  </div>
+</body>
 </html>
