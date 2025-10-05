@@ -5,7 +5,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
+  background-attachment: fixed;
 }
 
 /* 🎓 Bloc d’accueil */
@@ -22,10 +22,10 @@ body {
 
 /* 🖼️ Logo animé */
 .logo {
-  width: 200px;
+  width: 512px;
   transform: scale(0.8);
   animation: fadeZoom 2s ease-out forwards;
-  box-shadow: 0 0 20px #8a2be2;
+
 }
 
 /* ✨ Animation fade simple */
