@@ -46,18 +46,15 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-image: "assets/bgprofil.png"; /* ou "assets/bgProfil.jpg" si dans un dossier */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #1f4782;
   border-radius: 12px;
-  box-shadow: 0 0 16px #8a2be2;
+  box-shadow: 0 0 16px #9e4040;
 }
 
 .rp-form h2 {
   color: #1f4782;
   margin-bottom: 20px;
-  text-shadow: 0 0 6px #8a2be2;
+  text-shadow: 0 0 6px #9e4040;
   font-family: 'Cinzel Decorative', serif;
   text-align: center;
 }
@@ -120,7 +117,7 @@ button {
 
 button:hover {
   background-color: #9e4040;
-  transform: scale(0.5);
+  transform: scale(1.5);
 }
 
 .back-button {
