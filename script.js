@@ -17,7 +17,7 @@ function sendToDiscord() {
 	localStorage.setItem("rp_greek", greek);
 	localStorage.setItem("rp_story", story);
 
-	const webhookURL = "https://discord.com/api/webhooks/TON_WEBHOOK_ICI";
+	const webhookURL = "https://discord.com/api/webhooks/1424832477956018247/uMdgmPBJCIBlTxO6lCtAbm2pPemQcDEJstug2Nb77gDT9ZeErah0B1zrCeEOnADU8etp";
 	const payload = {
     content: `📜 RP Profile\n👤 Name: ${name}\n⚧️ Gender: ${gender}\n🎂 DoB: ${dob}\n📏 Height: ${height}\n⚖️ Weight: ${weight}\n🎓 Major: ${major}\n🏛️ Greek House: ${greek}\n📖 Story: ${story}`
  };
