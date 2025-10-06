@@ -108,7 +108,7 @@ button {
   display: block;
   margin: 20px auto;
   padding: 12px 24px;
-  background-color: #9e4040;
+  background-color: #1f4782;
   color: white;
   border: none;
   border-radius: 8px;
@@ -119,8 +119,8 @@ button {
 }
 
 button:hover {
-  background-color: #1f4782;
-  transform: scale(2.0);
+  background-color: #9e4040;
+  transform: scale(0.5);
 }
 
 .back-button {
@@ -128,7 +128,7 @@ button:hover {
   margin: 40px auto 20px;
   padding: 10px 20px;
   background-color: #444;
-  color: #f0f0f0;
+  color: #1f4782;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -138,5 +138,5 @@ button:hover {
 }
 
 .back-button:hover {
-  background-color: #8a2be2;
+  background-color: #1f4782;
 }
