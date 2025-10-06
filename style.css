@@ -52,7 +52,7 @@ body {
 }
 
 .rp-form h2 {
-  font-size: 32px;
+  font-size: 100px;
   color: #ffffff;
   margin-bottom: 20px;
   text-shadow: 0 0 6px #9e4040;
@@ -80,7 +80,7 @@ body {
 .rp-form button {
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #9e4040;
+  background-color: #1f4782;
   color: white;
   border: none;
   border-radius: 8px;
@@ -91,7 +91,7 @@ body {
 }
 
 .rp-form button:hover {
-  background-color: #1f4782;
+  background-color: #9e4040;
   transform: scale(1.5);
 }
 
@@ -125,8 +125,8 @@ button:hover {
   display: block;
   margin: 40px auto 20px;
   padding: 10px 20px;
-  background-color: #444;
-  color: #1f4782;
+  background-color: #1f4782;
+  color: #ffffff;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -136,5 +136,5 @@ button:hover {
 }
 
 .back-button:hover {
-  background-color: #1f4782;
+  background-color: #9e4040;
 }
