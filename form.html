@@ -6,6 +6,7 @@
 		<script src="script.js" defer></script>
 	</head>
 	<body>
+		<audio id="introSound" src="assets/entrance.mp3"></audio>
 		<div class="rp-form">
 			<h2>Create or Update RP Profile</h2>
 			<input type="text" id="name" placeholder="Full Name">
@@ -18,5 +19,6 @@
 			<textarea id="story" placeholder="RP Story..."></textarea>
 			<button onclick="sendToDiscord()">Send</button>
 		</div>
+		<button class="back-button" onclick="goBack()">← Back</button>
 	</body>
 </html>

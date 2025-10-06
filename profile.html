@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<audio id="introSound" src="assets/entrance.mp3"></audio>
 		<div class="profile">
 			<button class="upgrade" onclick="window.location.href='form.html'">Update</button>
 			<img src="portrait.png" alt="Portrait RP" class="portrait">
@@ -31,5 +32,6 @@
 			document.getElementById("greekField").textContent = localStorage.getItem("rp_greek") || "...";
 			document.getElementById("storyField").textContent = localStorage.getItem("rp_story") || "...";
 		</script>
+		<button class="back-button" onclick="goBack()">← Back</button>
 	</body>
 </html>
