@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Winter's Gates RP</title>
-  <link rel="stylesheet" href="style.css">
-  <script>
-    window.onload = function() {
-      const name = localStorage.getItem("rp_name");
-      if (name) {
-        window.location.href = "profile.html"; // profil déjà rempli
-      }
-    };
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="welcome">
-    <img src="logo-universite.png" alt="Logo Université" class="logo">
-    <h2 class="welcome-title">Welcome</h2>
-    <button onclick="window.location.href='form.html'">Create your profile</button>
-  </div>
-</body>
+	<head>
+		<title>Winter's Gates RP</title>
+		<link rel="stylesheet" href="style.css">
+		<script>
+			window.onload = function() {
+				const name = localStorage.getItem("rp_name");
+				if (name) {
+					window.location.href = "profile.html"; // profil déjà rempli
+				}
+			};
+		</script>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="welcome">
+			<img src="logo-universite.png" alt="Logo Université" class="logo">
+			<h2 class="welcome-title">Welcome</h2>
+			<button onclick="window.location.href='form.html'">Create your profile</button>
+		</div>
+	</body>
 </html>

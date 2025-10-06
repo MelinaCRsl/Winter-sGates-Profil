@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RP Profile</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="profile">
-    <button class="upgrade" onclick="window.location.href='form.html'">Update</button>
-
-    <img src="portrait.png" alt="Portrait RP" class="portrait">
-
-    <h2 id="nameField">Nom</h2>
-    <p><strong>Genre:</strong> <span id="genderField">...</span></p>
-    <p><strong>DoB:</strong> <span id="dobField">...</span></p>
-    <p><strong>Height:</strong> <span id="heightField">...</span></p>
-    <p><strong>Weight:</strong> <span id="weightField">...</span></p>
-
-    <h2>Academic Informations</h2>
-    <p><strong>Major:</strong> <span id="majorField">...</span></p>
-    <p><strong>Greek House:</strong> <span id="greekField">...</span></p>
-
-    <h2>RP Informations</h2>
-    <p><strong>Story:</strong> <span id="storyField">...</span></p>
-
-    <button onclick="window.location.href='form.html'">Create</button>
-    <button onclick="sendToDiscord()">Send</button>
-  </div>
-
-  <script>
-    document.getElementById("nameField").textContent = localStorage.getItem("rp_name") || "Nom";
-    document.getElementById("genderField").textContent = localStorage.getItem("rp_gender") || "...";
-    document.getElementById("dobField").textContent = localStorage.getItem("rp_dob") || "...";
-    document.getElementById("heightField").textContent = localStorage.getItem("rp_height") || "...";
-    document.getElementById("weightField").textContent = localStorage.getItem("rp_weight") || "...";
-    document.getElementById("majorField").textContent = localStorage.getItem("rp_major") || "...";
-    document.getElementById("greekField").textContent = localStorage.getItem("rp_greek") || "...";
-    document.getElementById("storyField").textContent = localStorage.getItem("rp_story") || "...";
-  </script>
-</body>
+	<head>
+		<title>RP Profile</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="profile">
+			<button class="upgrade" onclick="window.location.href='form.html'">Update</button>
+			<img src="portrait.png" alt="Portrait RP" class="portrait">
+			<h2 id="nameField">Nom</h2>
+			<p><strong>Genre:</strong> <span id="genderField">...</span></p>
+			<p><strong>DoB:</strong> <span id="dobField">...</span></p>
+			<p><strong>Height:</strong> <span id="heightField">...</span></p>
+			<p><strong>Weight:</strong> <span id="weightField">...</span></p>
+			<h2>Academic Informations</h2>
+			<p><strong>Major:</strong> <span id="majorField">...</span></p>
+			<p><strong>Greek House:</strong> <span id="greekField">...</span></p>
+			<h2>RP Informations</h2>
+			<p><strong>Story:</strong> <span id="storyField">...</span></p>
+			<button onclick="window.location.href='form.html'">Create</button>
+			<button onclick="sendToDiscord()">Send</button>
+		</div>
+		<script>
+			document.getElementById("nameField").textContent = localStorage.getItem("rp_name") || "Nom";
+			document.getElementById("genderField").textContent = localStorage.getItem("rp_gender") || "...";
+			document.getElementById("dobField").textContent = localStorage.getItem("rp_dob") || "...";
+			document.getElementById("heightField").textContent = localStorage.getItem("rp_height") || "...";
+			document.getElementById("weightField").textContent = localStorage.getItem("rp_weight") || "...";
+			document.getElementById("majorField").textContent = localStorage.getItem("rp_major") || "...";
+			document.getElementById("greekField").textContent = localStorage.getItem("rp_greek") || "...";
+			document.getElementById("storyField").textContent = localStorage.getItem("rp_story") || "...";
+		</script>
+	</body>
 </html>

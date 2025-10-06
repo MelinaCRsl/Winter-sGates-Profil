@@ -37,6 +37,62 @@ body {
 
 }
 
+.rp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(26, 19, 51, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 16px #8a2be2;
+}
+
+.rp-form h2 {
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px #8a2be2;
+  font-family: 'Cinzel Decorative', serif;
+  text-align: center;
+}
+
+.rp-form input,
+.rp-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.rp-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.rp-form button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rp-form button:hover {
+  background-color: #a85cfb;
+  transform: scale(1.05);
+}
+
 /* ✨ Animation fade simple */
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -62,4 +118,3 @@ button:hover {
   background-color: #1f4782;
   transform: scale(2.0);
 }
-
