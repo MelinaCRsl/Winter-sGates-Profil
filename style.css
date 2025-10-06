@@ -55,7 +55,7 @@ body {
 }
 
 .rp-form h2 {
-  color: #f0f0f0;
+  color: #1f4782;
   margin-bottom: 20px;
   text-shadow: 0 0 6px #8a2be2;
   font-family: 'Cinzel Decorative', serif;
@@ -82,7 +82,7 @@ body {
 .rp-form button {
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #8a2be2;
+  background-color: #1f4782;
   color: white;
   border: none;
   border-radius: 8px;
