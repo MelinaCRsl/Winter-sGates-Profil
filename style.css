@@ -1,6 +1,6 @@
 /* 🌌 Fond immersif pour la page d’accueil */
 body {
-  background-image: "bgprofil.png"; /* ou "assets/bgProfil.jpg" si dans un dossier */
+  background-image: "assets/bgprofil.png"; /* ou "assets/bgProfil.jpg" si dans un dossier */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
