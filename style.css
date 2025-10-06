@@ -138,3 +138,62 @@ button:hover {
 .back-button:hover {
   background-color: #9e4040;
 }
+
+.rp-profile {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(26, 19, 51, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 16px #8a2be2;
+  color: #f0f0f0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.rp-profile h2 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 0 8px #8a2be2;
+  margin-bottom: 30px;
+}
+
+.rp-frame {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #8a2be2;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 8px #5e2ca5;
+}
+
+.rp-frame h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 4px #8a2be2;
+}
+
+.rp-frame p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.rp-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rp-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rp-buttons button:hover {
+  background-color: #8a2be2;
+}

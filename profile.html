@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>RP Profile</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<audio id="introSound" src="assets/entrance.mp3"></audio>
-		<div class="profile">
-			<button class="upgrade" onclick="window.location.href='form.html'">Update</button>
-			<img src="portrait.png" alt="Portrait RP" class="portrait">
-			<h2 id="nameField">Nom</h2>
-			<p><strong>Genre:</strong> <span id="genderField">...</span></p>
-			<p><strong>DoB:</strong> <span id="dobField">...</span></p>
-			<p><strong>Height:</strong> <span id="heightField">...</span></p>
-			<p><strong>Weight:</strong> <span id="weightField">...</span></p>
-			<h2>Academic Informations</h2>
-			<p><strong>Major:</strong> <span id="majorField">...</span></p>
-			<p><strong>Greek House:</strong> <span id="greekField">...</span></p>
-			<h2>RP Informations</h2>
-			<p><strong>Story:</strong> <span id="storyField">...</span></p>
-			<button onclick="window.location.href='form.html'">Create</button>
-			<button onclick="sendToDiscord()">Send</button>
-		</div>
-		<script>
-			document.getElementById("nameField").textContent = localStorage.getItem("rp_name") || "Nom";
-			document.getElementById("genderField").textContent = localStorage.getItem("rp_gender") || "...";
-			document.getElementById("dobField").textContent = localStorage.getItem("rp_dob") || "...";
-			document.getElementById("heightField").textContent = localStorage.getItem("rp_height") || "...";
-			document.getElementById("weightField").textContent = localStorage.getItem("rp_weight") || "...";
-			document.getElementById("majorField").textContent = localStorage.getItem("rp_major") || "...";
-			document.getElementById("greekField").textContent = localStorage.getItem("rp_greek") || "...";
-			document.getElementById("storyField").textContent = localStorage.getItem("rp_story") || "...";
-		</script>
-		<button class="back-button" onclick="window.location.href='index.html'">← Retour</button>
-	</body>
+<head>
+  <title>RP Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="introSound" src="assets/entrance.mp3"></audio>
+
+  <div class="rp-profile">
+    <h2 id="nameField">Nom du personnage</h2>
+
+    <div class="rp-frame">
+      <h3>Identité</h3>
+      <p><strong>Genre :</strong> <span id="genderField">...</span></p>
+      <p><strong>Date de naissance :</strong> <span id="dobField">...</span></p>
+      <p><strong>Taille :</strong> <span id="heightField">...</span></p>
+      <p><strong>Poids :</strong> <span id="weightField">...</span></p>
+    </div>
+
+    <div class="rp-frame">
+      <h3>Académique</h3>
+      <p><strong>Spécialité :</strong> <span id="majorField">...</span></p>
+      <p><strong>Maison grecque :</strong> <span id="greekField">...</span></p>
+      <img id="greekLogo" src="" alt="Logo Greek House" style="max-height: 80px; display: none;">
+    </div>
+
+    <div class="rp-frame">
+      <h3>Histoire RP</h3>
+      <p id="storyField">...</p>
+    </div>
+
+    <div class="rp-buttons">
+      <button onclick="window.location.href='form.html'">📝 Modifier</button>
+      <button onclick="sendToDiscord()">📤 Envoyer</button>
+      <button class="back-button" onclick="window.location.href='index.html'">← Retour</button>
+    </div>
+  </div>
+
+  <script>
+    const fields = {
+      nameField: "rp_name",
+      genderField: "rp_gender",
+      dobField: "rp_dob",
+      heightField: "rp_height",
+      weightField: "rp_weight",
+      majorField: "rp_major",
+      greekField: "rp_greek",
+      storyField: "rp_story"
+    };
+
+    for (const [id, key] of Object.entries(fields)) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = localStorage.getItem(key) || "...";
+    }
+
+    // Logo Greek House
+    /*const greek = localStorage.getItem("rp_greek");
+    const logoMap = {
+      "Athena": "assets/athena.png",
+      "Apollo": "assets/apollo.png",
+      "Hades": "assets/hades.png"
+      // Ajoute tes maisons ici
+    };
+    if (logoMap[greek]) {
+      const logo = document.getElementById("greekLogo");
+      logo.src = logoMap[greek];
+      logo.style.display = "block";
+    }*/
+  </script>
+</body>
 </html>
