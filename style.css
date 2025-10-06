@@ -52,7 +52,8 @@ body {
 }
 
 .rp-form h2 {
-  color: #1f4782;
+  font-size: 32px;
+  color: #ffffff;
   margin-bottom: 20px;
   text-shadow: 0 0 6px #9e4040;
   font-family: 'Cinzel Decorative', serif;
@@ -79,19 +80,19 @@ body {
 .rp-form button {
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #1f4782;
+  background-color: #9e4040;
   color: white;
   border: none;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .rp-form button:hover {
-  background-color: #a85cfb;
-  transform: scale(1.05);
+  background-color: #1f4782;
+  transform: scale(1.5);
 }
 
 /* ✨ Animation fade simple */
