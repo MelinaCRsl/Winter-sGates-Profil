@@ -52,10 +52,10 @@ body {
 }
 
 .rp-form h2 {
-  font-size: 100px;
+  font-size: 75px;
   color: #ffffff;
   margin-bottom: 20px;
-  text-shadow: 0 0 6px #9e4040;
+  text-shadow: 0 0 15px #9e4040;
   font-family: 'Cinzel Decorative', serif;
   text-align: center;
 }
