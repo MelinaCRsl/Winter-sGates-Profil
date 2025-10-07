@@ -50,13 +50,18 @@ body {
 }
 
 #imgFusion {
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* largeur totale */
+  height: 100vh; /* hauteur totale */
+  object-fit: cover; /* ajuste sans déformation */
   opacity: 0;
-  z-index: 1;
+  z-index: 1; /* reste en arrière-plan */
 }
 
+
 #introContent {
-  z-index: 4;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,6 +69,7 @@ body {
   text-align: center;
   opacity: 0;
   transition: opacity 1.5s ease;
+  z-index: 5;
 }
 
 #introContent h2 {
@@ -91,8 +97,9 @@ body {
 }
 
 /* 🖼️ Logo animé */
-.logo {
-  max-width: 150px;
+#Citylogo {
+  max-width: 200px;
+  width: 80%;
   margin-bottom: 20px;
   animation: fadeZoom 2s ease-out forwards;
 }
