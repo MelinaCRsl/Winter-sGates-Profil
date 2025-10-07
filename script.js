@@ -1,3 +1,5 @@
+console.log("✅ Script chargé !");
+
 // 🎬 Animation d’intro
 document.addEventListener("DOMContentLoaded", () => {
   const blue = document.getElementById("imgBlue");
