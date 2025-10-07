@@ -54,7 +54,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw; /* largeur totale */
-  height: 100vh; /* hauteur totale */
+  height: 80vh; /* hauteur totale */
   object-fit: cover; /* ajuste sans déformation */
   opacity: 0;
   z-index: 1; /* reste en arrière-plan */
