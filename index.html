@@ -25,5 +25,34 @@
 				<button onclick="window.location.href='welcome.html'">Enter</button>
 			</div>
 		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const blue = document.getElementById("imgBlue");
+				const red = document.getElementById("imgRed");
+				const fusion = document.getElementById("imgFusion");
+				const content = document.getElementById("introContent");
+				const sound = document.getElementById("introSound");
+				// Étape 1 : glissement des deux images
+				setTimeout(() => {
+					blue.style.transform = "translateX(100%)";
+					blue.style.opacity = "1";
+					red.style.transform = "translateX(-100%)";
+					red.style.opacity = "1";
+				}, 500);
+				// Étape 2 : apparition de l’image fusion
+				setTimeout(() => {
+					blue.style.opacity = "0";
+					red.style.opacity = "0";
+					fusion.style.opacity = "1";
+				}, 2000);
+				// Étape 3 : apparition du contenu
+				setTimeout(() => {
+					content.style.opacity = "1";
+					sound.play().catch(e => {
+						console.log("Lecture audio bloquée :", e);
+					});
+				}, 3000);
+			});
+		</script>
 	</body>
 </html>

@@ -65,7 +65,7 @@ body {
   transition: opacity 1.5s ease;
 }
 
-#introContent h1 {
+#introContent h2 {
   font-size: 40px;
   color: #f0f0f0;
   text-shadow: 0 0 8px #8a2be2;
