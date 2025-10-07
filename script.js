@@ -100,7 +100,7 @@ function sendToDiscord() {
   })
   .then(() => {
     alert("Profile sent to Discord!");
-    window.location.href = "profile.html";
+    window.location.href = "Winter-sGates-Profil/profile.html";
   })
   .catch(err => alert("Error sending to Discord: " + err));
 }
