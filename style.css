@@ -41,7 +41,7 @@ body {
 
 #imgBlue {
   left: -100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 #imgRed {
@@ -52,7 +52,7 @@ body {
 #imgFusion {
   left: 0;
   opacity: 0;
-  z-index: 3;
+  z-index: 1;
 }
 
 #introContent {
@@ -71,6 +71,7 @@ body {
   text-shadow: 0 0 8px #8a2be2;
   margin-bottom: 20px;
   font-family: 'AsianSkyline', serif;
+  z-index: 4;
 }
 
 #introContent button {
@@ -82,6 +83,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 4;
 }
 
 #introContent button:hover {
@@ -94,6 +96,7 @@ body {
   max-width: 300px;
   margin-bottom: 20px;
   animation: fadeZoom 2s ease-out forwards;
+  z-index: 4;
 }
 
 /* ✨ Animations */
