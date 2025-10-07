@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h2 id="nameField">Nom du personnage</h2>
+  <meta charset="UTF-8">
+  <title>RP Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="rp-profile">
+    <h2 id="nameField">Nom du personnage</h2>
+
+    <!-- 🧍 Identité -->
     <div class="rp-frame">
       <h3>Identity</h3>
       <p><strong>Gender :</strong> <span id="genderField">...</span></p>
@@ -13,18 +19,22 @@
       <p><strong>Weight :</strong> <span id="weightField">...</span></p>
     </div>
 
+    <!-- 🎓 Académique -->
     <div class="rp-frame">
       <h3>Academic</h3>
       <p><strong>Major:</strong> <span id="majorField">...</span></p>
-      <p><strong>Greek :</strong> <span id="greekField">...</span></p>
-      <img id="greekLogo" src="" alt="Logo Greek House" style="max-height: 80px; display: none;">
+      <p><strong>Greek House:</strong> <span id="greekField">...</span>
+        <img id="greekLogo" src="" alt="Greek House Logo" style="max-height: 40px; vertical-align: middle; margin-left: 10px; display: none;">
+      </p>
     </div>
 
+    <!-- 📖 Histoire -->
     <div class="rp-frame">
       <h3>Storyline</h3>
       <p id="storyField">...</p>
     </div>
 
+    <!-- 📤 Boutons -->
     <div class="rp-buttons">
       <button onclick="window.location.href='form.html'">📝 Edit</button>
       <button onclick="sendToDiscord()">📤 Send</button>
@@ -33,6 +43,7 @@
   </div>
 
   <script>
+    // 🔄 Chargement des données depuis localStorage
     const fields = {
       nameField: "rp_name",
       genderField: "rp_gender",
@@ -49,19 +60,23 @@
       if (el) el.textContent = localStorage.getItem(key) || "...";
     }
 
-    // Logo Greek House
-    /*const greek = localStorage.getItem("rp_greek");
+    // 🏛️ Logo de la maison Greek
+    const greek = localStorage.getItem("rp_greek");
     const logoMap = {
-      "Athena": "assets/athena.png",
-      "Apollo": "assets/apollo.png",
-      "Hades": "assets/hades.png"
-      // Ajoute tes maisons ici
+      abg: "assets/logos/abg.png",
+      acd: "assets/logos/acd.png",
+      kop: "assets/logos/kop.png",
+      osr: "assets/logos/osr.png",
+      pes: "assets/logos/pes.png",
+      pkv: "assets/logos/pkv.png"
     };
-    if (logoMap[greek]) {
+
+    if (greek && logoMap[greek.toLowerCase()]) {
       const logo = document.getElementById("greekLogo");
-      logo.src = logoMap[greek];
-      logo.style.display = "block";
-    }*/
+      logo.src = logoMap[greek.toLowerCase()];
+      logo.style.display = "inline-block";
+    }
   </script>
+
 </body>
 </html>
