@@ -73,33 +73,33 @@ body {
 }
 
 #introContent h2 {
-  font-size: 40px;
+  font-size: 75px;
   color: #f0f0f0;
-  text-shadow: 0 0 8px #8a2be2;
+  text-shadow: 0 0 15px #083150;
   margin-bottom: 20px;
-  font-family: 'AsianSkyline', serif;
+  font-family: 'College Squad', serif;
 }
 
 #introContent button {
   padding: 12px 24px;
-  font-size: 24px;
-  background-color: #1f4782;
+  font-size: 30px;
+  background-color: #083150;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #introContent button:hover {
-  background-color: #9e4040;
+  background-color: #9b1e23;
   transform: scale(1.1);
 }
 
 /* 🖼️ Logo animé */
 #Citylogo {
   max-width: 200px;
-  width: 80%;
+  width: 100%;
   margin-bottom: 20px;
   animation: fadeZoom 2s ease-out forwards;
 }
