@@ -62,8 +62,6 @@ body {
 
 #introContent {
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
@@ -72,7 +70,7 @@ body {
 }
 
 #introContent h2 {
-  font-size: 75px;
+  font-size: 150px;
   color: #f0f0f0;
   text-shadow: 0 0 15px #083150;
   margin-bottom: 20px;
@@ -80,7 +78,7 @@ body {
 }
 
 #introContent button {
-  padding: 12px 24px;
+  padding: 35px 45px;
   font-size: 30px;
   background-color: #083150;
   color: white;
@@ -98,7 +96,7 @@ body {
 
 /* 🖼️ Logo animé */
 #Citylogo {
-  max-width: 200px;
+  max-width: 512px;
   width: 100%;
   margin-bottom: 20px;
   animation: fadeZoom 2s ease-out forwards;
