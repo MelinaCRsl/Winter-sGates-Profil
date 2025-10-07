@@ -4,17 +4,8 @@
 		<meta charset="UTF-8">
 		<title>Winter's Gates RP</title>
 		<link rel="stylesheet" href="style.css">
-		<script>
-			window.onload = function () {
-				const name = localStorage.getItem("rp_name");
-				if (name) {
-					window.location.href = "profile.html"; // profil déjà rempli
-				}
-			};
-		</script>
 	</head>
 	<body>
-
 		<!-- 🎬 Intro animée -->
 		<div id="intro">
 			<img id="imgBlue" src="assets/img/bg1.png">
@@ -27,7 +18,6 @@
 				<button onclick="showWelcome()">Enter</button>
 			</div>
 		</div>
-
 		<!-- 🌆 Bloc d’accueil (caché au départ) -->
 		<div class="welcome" id="welcomeBlock" style="display: none;">
 			<img src="assets/img/wgcitylogo.png" alt="City Logo" class="logo">
@@ -38,10 +28,14 @@
 		<script src="script.js"></script>
 		<script>
 			function showWelcome() {
-			document.getElementById("intro").style.display = "none";
-			document.getElementById("welcomeBlock").style.display = "block";
+				document.getElementById("intro").style.display = "none";
+				document.getElementById("welcomeBlock").style.display = "block";
+
+				const name = localStorage.getItem("rp_name");
+				if (name) {
+					window.location.href = "profile.html"; // redirection après intro si profil déjà rempli
+				}
 			}
 		</script>
-
 	</body>
 </html>
