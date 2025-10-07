@@ -40,23 +40,24 @@ body {
 }
 
 #imgBlue {
-  left: -100%;
+  left: 100%;
   z-index: 3;
 }
 
 #imgRed {
-  right: -100%;
+  right: 100%;
   z-index: 2;
 }
 
 #imgFusion {
-  left: 0;
+  height: 100%;
   opacity: 0;
   z-index: 1;
 }
 
 #introContent {
   position: absolute;
+  z-index: 4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -83,7 +84,6 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 4;
 }
 
 #introContent button:hover {
@@ -96,7 +96,6 @@ body {
   max-width: 300px;
   margin-bottom: 20px;
   animation: fadeZoom 2s ease-out forwards;
-  z-index: 4;
 }
 
 /* ✨ Animations */
