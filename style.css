@@ -126,14 +126,6 @@ body {
   max-width: 600px;
 }
 
-.welcome-title {
-  text-align: center;
-  font-size: 100px;
-  color: #1f4782;
-  text-shadow: 0 0 8px #9e4040;
-  font-family: 'AsianSkyline', serif;
-}
-
 /* 📋 Formulaire RP */
 .rp-form {
   display: flex;
@@ -142,16 +134,16 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #1f4782;
+  background-color: #083150;
   border-radius: 12px;
-  box-shadow: 0 0 16px #9e4040;
+  box-shadow: 0 0 16px #9b1e23;
 }
 
 .rp-form h2 {
   font-size: 75px;
   color: #ffffff;
   margin-bottom: 5px;
-  text-shadow: 0 0 15px #9e4040;
+  text-shadow: 0 0 15px #9b1e23;
   font-family: 'Cinzel Decorative', serif;
   text-align: center;
 }
@@ -165,7 +157,7 @@ body {
   border: none;
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
-  background-color: #f8f8f8;
+  background-color: #083150;
 }
 
 .rp-form textarea {
@@ -176,7 +168,7 @@ body {
 .rp-form button {
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #1f4782;
+  background-color: #083150;
   color: white;
   border: none;
   border-radius: 8px;
@@ -187,7 +179,7 @@ body {
 }
 
 .rp-form button:hover {
-  background-color: #9e4040;
+  background-color: #9b1e23;
   transform: scale(1.1);
 }
 
@@ -196,9 +188,9 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: rgba(26, 19, 51, 0.7);
+  background-color: rgba(8, 49, 80, 0.1);
   border-radius: 12px;
-  box-shadow: 0 0 16px #8a2be2;
+  box-shadow: 0 0 16px #9b1e23;
   color: #f0f0f0;
   font-family: 'College Squad', sans-serif;
 }
@@ -206,23 +198,23 @@ body {
 .rp-profile h2 {
   font-size: 50px;
   text-align: center;
-  text-shadow: 0 0 10px #8a2be2;
+  text-shadow: 0 0 10px #9b1e23;
   margin-bottom: 30px;
 }
 
 .rp-frame {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #8a2be2;
+  background-color: rgba(8, 49, 80, 0.01);
+  border: 1px solid #9b1e23;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
-  box-shadow: 0 0 8px #5e2ca5;
+  box-shadow: 0 0 8px #083150;
 }
 
 .rp-frame h3 {
   font-size: 24px;
   margin-bottom: 15px;
-  text-shadow: 0 0 4px #8a2be2;
+  text-shadow: 0 0 4px #9b1e23;
 }
 
 .rp-frame p {
@@ -238,17 +230,18 @@ body {
 .rp-buttons button {
   margin: 10px;
   padding: 10px 20px;
-  background-color: #444;
+  background-color: #9b1e23;
   color: #f0f0f0;
   border: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 30px;
+  font-family: 'AsianSkyline', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .rp-buttons button:hover {
-  background-color: #8a2be2;
+  background-color: #083150;
 }
 
 /* 🔙 Bouton retour */
@@ -256,16 +249,16 @@ body {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #1f4782;
+  background-color: #9b1e23;
   color: #ffffff;
   border: none;
   border-radius: 6px;
-  font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-family: 'AsianSkyline', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-  background-color: #9e4040;
+  background-color: #083150;
 }

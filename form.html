@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Create RP Profile</title>
+		<title>Profil</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<audio id="introSound" src="assets/sound/entrance.mp3"></audio>
 		<div class="rp-form">
-			<h2>Create or Update RP Profile</h2>
+			<h2>Profil</h2>
 			<input type="text" id="name" placeholder="Full Name">
+			
 			<input type="text" id="gender" placeholder="Gender">
 			<input type="text" id="dob" placeholder="Date of Birth">
 			<input type="text" id="height" placeholder="Height">
 			<input type="text" id="weight" placeholder="Weight">
+			
 			<input type="text" id="major" placeholder="Major">
 			<input type="text" id="greek" placeholder="Greek House">
+			
 			<textarea id="story" placeholder="RP Story..."></textarea>
+			
 			<button onclick="sendToDiscord()">Send</button>
 		</div>
 		<button class="back-button" onclick="window.location.href='index.html'">← Retour</button>
