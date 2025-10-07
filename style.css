@@ -88,6 +88,7 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-family: 'AsianSkyline', serif;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
