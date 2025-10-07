@@ -1,4 +1,3 @@
-// 🎯 Envoi du profil RP vers Discord
 // 🎬 Animation d’intro
 document.addEventListener("DOMContentLoaded", () => {
   const blue = document.getElementById("imgBlue");
@@ -28,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   }
 });
-
+// 🎯 Envoi du profil RP vers Discord
 function sendToDiscord() {
   const fields = {
     name: "Nom",
