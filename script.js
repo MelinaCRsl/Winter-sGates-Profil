@@ -1,4 +1,34 @@
 // 🎯 Envoi du profil RP vers Discord
+// 🎬 Animation d’intro
+document.addEventListener("DOMContentLoaded", () => {
+  const blue = document.getElementById("imgBlue");
+  const red = document.getElementById("imgRed");
+  const fusion = document.getElementById("imgFusion");
+  const content = document.getElementById("introContent");
+  const sound = document.getElementById("introSound");
+
+  if (blue && red && fusion && content) {
+    // Intro animée uniquement si les éléments existent
+    setTimeout(() => {
+      blue.style.transform = "translateX(100%)";
+      blue.style.opacity = "1";
+      red.style.transform = "translateX(-100%)";
+      red.style.opacity = "1";
+    }, 500);
+
+    setTimeout(() => {
+      blue.style.opacity = "0";
+      red.style.opacity = "0";
+      fusion.style.opacity = "1";
+    }, 2000);
+
+    setTimeout(() => {
+      content.style.opacity = "1";
+      sound?.play().catch(e => console.log("Audio bloqué :", e));
+    }, 3000);
+  }
+});
+
 function sendToDiscord() {
   const fields = {
     name: "Nom",
