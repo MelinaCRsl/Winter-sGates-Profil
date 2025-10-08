@@ -74,23 +74,34 @@ function sendToDiscord() {
     localStorage.setItem(`rp_${key}`, fields[key]);
   }
 
-  // 📤 Webhook Discord
+  // 📤 Webhook Discord avec embed stylisé
   const webhookURL = "https://discord.com/api/webhooks/1424832477956018247/uMdgmPBJCIBlTxO6lCtAbm2pPemQcDEJstug2Nb77gDT9ZeErah0B1zrCeEOnADU8etp";
   const payload = {
-    content:
-`📜 RP Profile
-👤 Name: ${fields.name}
-⚧️ Gender: ${fields.gender}
-🎂 DoB: ${fields.dob}
-📏 Height: ${fields.height}
-⚖️ Weight: ${fields.weight}
-🎓 Major: ${fields.major}
-🏅 Activities: ${activities}
-🏛️ Greek House: ${greekEmoji} ${fields.greek}
-🎭 Role: ${fields.role}
-🏠 Address: ${fields.address}
-💼 Job: ${fields.job}
-📖 Story: ${fields.story}`
+    embeds: [
+      {
+        title: `📜 RP Profile: ${fields.name}`,
+        color: 0x9b1e23,
+        thumbnail: {
+          url: "https://melinacrsl.github.io/Winter-sGates-Profil/assets/img/wgcitylogo.png"
+        },
+        fields: [
+          { name: "⚧️ Gender", value: fields.gender, inline: true },
+          { name: "🎂 DoB", value: fields.dob, inline: true },
+          { name: "📏 Height", value: fields.height, inline: true },
+          { name: "⚖️ Weight", value: fields.weight, inline: true },
+          { name: "🎓 Major", value: fields.major, inline: true },
+          { name: "🏅 Activities", value: activities, inline: true },
+          { name: "🏛️ Greek House", value: `${greekEmoji} ${fields.greek}`, inline: true },
+          { name: "🎭 Role", value: fields.role, inline: true },
+          { name: "🏠 Address", value: fields.address, inline: true },
+          { name: "💼 Job", value: fields.job, inline: true },
+          { name: "📖 Story", value: fields.story }
+        ],
+        footer: {
+          text: "Winter's Gates RP System"
+        }
+      }
+    ]
   };
 
   fetch(webhookURL, {
@@ -104,3 +115,4 @@ function sendToDiscord() {
   })
   .catch(err => alert("Error sending to Discord: " + err));
 }
+
