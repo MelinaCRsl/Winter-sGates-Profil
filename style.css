@@ -177,7 +177,7 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: rgba(8, 49, 80, 0.01);
+  background-color: rgba(8, 49, 80, 0.9);
   border-radius: 12px;
   box-shadow: 0 0 16px #9b1e23;
   color: #f0f0f0;
@@ -192,7 +192,7 @@ body {
 }
 
 .rp-frame {
-  background-color: rgba(8, 49, 80, 0.01);
+  background-color: rgba(8, 49, 80, 0.9);
   border: 1px solid #9b1e23;
   border-radius: 8px;
   padding: 20px;
